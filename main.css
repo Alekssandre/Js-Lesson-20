@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+.field-wrapper {
+    max-width: 600px;
+    width: 100%;
+    background: #000;
+    margin: 0 auto;
+    padding: .8em;
+}
+.field-box {
+    position: relative;
+    padding: 10px;
+    font-size: 75%;
+    font-family: 'Spartan', sans-serif;
+    color: #fff;
+}
+.success-icon {
+    display: none;
+    position: absolute;
+    right: 1em;
+}
+.field-box label {
+    width: 250px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.field-box input {
+    width: 300px;
+    height: 25px;
+    outline: none;
+    border: none;
+}
+.field-error {
+    color: rgb(255, 0, 0);
+    font-family: 'Spartan', sans-serif;
+    text-transform: uppercase;
+}
+.password-strength {
+    height: 5px;
+    background: #fff;
+}
+.button {
+    width: 80%;
+    display: flex;
+    gap: 1em;
+}
+button {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 4px 24px 4px;
+    border-radius: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+
+input.error {
+    border-bottom: 2px solid red;
+}

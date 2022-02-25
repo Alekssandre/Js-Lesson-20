@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title> Registration Menu </title>
+  </head>
+  <body>
+    <main>
+      <div class="field-wrapper">
+        <form id="signup-form" action="result.html" method="get">
+          <div class="field-box">
+            <label for="first-name">first name</label>
+            <input type="text" id="first-name" minlength="2" required />
+            <span class="field-error" id="first-name-error"></span>
+            <img class="success-icon" id="first-name-icon" src="done_black_24dp.svg" alt="success">
+          </div>
+          <div class="field-box">
+            <label for="last-name">last name</label>
+            <input type="text" id="last-name" minlength="2" required />
+            <span class="field-error" id="last-name-error"></span>
+            <img class="success-icon" id="last-name-icon" src="done_black_24dp.svg" alt="success">
+          </div>
+          <div class="field-box">
+            <label for="username">username</label>
+            <input type="text" id="username" minlength="4" maxlength="12" required />
+            <span class="field-error" id="username-error"></span>
+            <img class="success-icon" id="username-icon" src="done_black_24dp.svg" alt="success">
+          </div>
+          <div class="field-box">
+            <label for="id-number">ID</label>
+            <input
+              type="number"
+              id="id-number"
+              placeholder="ID NUMBER"
+              required
+            />
+            <span class="field-error" id="id-number-error"></span>
+            <img class="success-icon" id="id-number-icon" src="done_black_24dp.svg" alt="success">
+          </div>
+          <div class="field-box">
+            <label for="date">date of birth</label>
+            <input type="date" id="date" required />
+            <span class="field-error" id="date-error"></span>
+            <img class="success-icon" id="date-icon" src="done_black_24dp.svg" alt="success">
+          </div>
+          <div class="field-box">
+            <label for="email">e-mail address</label>
+            <input type="email" id="email" required />
+            <span class="field-error" id="email-error"></span>
+            <img class="success-icon" id="email-icon" src="done_black_24dp.svg" alt="success">
+          </div>
+          <div class="field-box">
+            <label for="password">password</label>
+            <input type="password" id="password" required />
+            <span class="field-error" id="password-error"></span>
+            <img class="success-icon" id="password-icon" src="done_black_24dp.svg" alt="success">
+          </div>
+          <div class="field-box">
+            <label for="confirm-password">confirm password</label>
+            <input type="password" id="confirm-password" required />
+            <span class="field-error" id="confirm-password-error"></span>
+            <img class="success-icon" id="confirm-password-icon" src="done_black_24dp.svg" alt="success">
+          </div>
+          <div class="field-box">
+            <label for="">password strength</label>
+            <div class="password-strength"></div>
+          </div>
+          <div class="field-box">
+            <label for="url">URL</label>
+            <input type="url" id="url" required />
+            <span class="field-error" id="url-error"></span>
+            <img class="success-icon" id="url-icon" src="done_black_24dp.svg" alt="success">
+          </div>
+          <div class="field-box button">
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
